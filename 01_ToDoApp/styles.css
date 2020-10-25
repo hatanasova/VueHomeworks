@@ -1,3 +1,15 @@
 body {
     background-color: teal;
 }
+
+input[type="text"] {
+    width: 70%;
+    border: 1px solid teal;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    margin-right: 16px;
+}
+
+input[type="checkbox"] {
+    transform: scale(2);
+}

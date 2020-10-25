@@ -13,8 +13,17 @@ const ToDoApp = {
   methods: {
     itemDone(event) {
       event.target.value = true;
-      event.target.parentNode.children[1].classList.add("text-gray-500", "line-through");
+      event.target.parentNode.children[1].classList.add(
+        "text-gray-500",
+        "line-through"
+      );
       event.target.disabled = true;
+    },
+    newItem(event) {
+      this.items.push({
+        text: event.target.parentNode.children[0].value,
+        done: false,
+      });
     },
   },
 };
