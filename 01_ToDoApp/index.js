@@ -20,10 +20,13 @@ const ToDoApp = {
       event.target.disabled = true;
     },
     newItem(event) {
-      this.items.push({
-        text: event.target.parentNode.children[0].value,
-        done: false,
-      });
+      let inputFieldValue = event.target.parentNode.children[0].value;
+      if (!inputFieldValue == "") {
+        this.items.push({
+          text: inputFieldValue,
+          done: false,
+        });
+      }
       event.target.parentNode.children[0].value = "";
     },
   },
