@@ -24,6 +24,7 @@ const ToDoApp = {
         text: event.target.parentNode.children[0].value,
         done: false,
       });
+      event.target.parentNode.children[0].value = "";
     },
   },
 };
